@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Únete | Consejo de Pastores El Bosque</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Consejo de Pastores El Bosque" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="iglesias.html">Iglesias</a></li>
+        <li><a href="unete.html" class="active nav-cta">Únete</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="tag">Bienvenido</span>
+      <h1>Únete</h1>
+      <p>Sé parte del movimiento de unidad más grande de El Bosque.</p>
+    </div>
+  </section>
+
+  <!-- FORMAS DE UNIRSE -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">¿Cómo participar?</span>
+        <h2>Hay un lugar <span class="purple">para ti</span></h2>
+      </div>
+      <div class="formas-grid">
+        <div class="forma-card">
+          <div class="forma-icon purple-bg">⛪</div>
+          <h3>Iglesia Afiliada</h3>
+          <p>Si eres pastor o líder de una congregación en El Bosque, tu iglesia puede afiliarse al Consejo y acceder a todos los beneficios de la red.</p>
+          <ul class="forma-beneficios">
+            <li>✓ Participación en actividades conjuntas</li>
+            <li>✓ Red de apoyo pastoral</li>
+            <li>✓ Visibilidad en la comunidad</li>
+            <li>✓ Acceso a recursos compartidos</li>
+          </ul>
+        </div>
+        <div class="forma-card featured">
+          <div class="forma-icon green-bg">🙋</div>
+          <h3>Voluntario</h3>
+          <p>Aporta tu tiempo y talentos en nuestros proyectos sociales, eventos y programas comunitarios. ¡Te necesitamos!</p>
+          <ul class="forma-beneficios">
+            <li>✓ Participa en operativos sociales</li>
+            <li>✓ Apoya en eventos y celebraciones</li>
+            <li>✓ Ministerio de niños y jóvenes</li>
+            <li>✓ Comunicaciones y redes sociales</li>
+          </ul>
+        </div>
+        <div class="forma-card">
+          <div class="forma-icon purple-bg">💬</div>
+          <h3>Contacto General</h3>
+          <p>¿Tienes preguntas, sugerencias o quieres saber más sobre el Consejo? Escríbenos y te responderemos a la brevedad.</p>
+          <ul class="forma-beneficios">
+            <li>✓ Información general</li>
+            <li>✓ Alianzas institucionales</li>
+            <li>✓ Medios de comunicación</li>
+            <li>✓ Donaciones y apoyo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="section-pad dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Contáctanos</span>
+        <h2>Escríbenos <span class="green">hoy</span></h2>
+        <p>Completa el formulario y nos comunicaremos contigo pronto.</p>
+      </div>
+
+      <div class="form-container">
+        <div class="form-tabs">
+          <button class="tab-btn active" data-tab="iglesia">Iglesia / Pastor</button>
+          <button class="tab-btn" data-tab="voluntario">Voluntario</button>
+          <button class="tab-btn" data-tab="general">General</button>
+        </div>
+
+        <form id="contacto-form" class="contact-form" novalidate>
+
+          <!-- TAB: IGLESIA -->
+          <div class="tab-content active" id="tab-iglesia">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre-pastor">Nombre del Pastor *</label>
+                <input type="text" id="nombre-pastor" name="nombre-pastor" placeholder="Ej: Juan Pérez" required />
+              </div>
+              <div class="form-group">
+                <label for="nombre-iglesia">Nombre de la Iglesia *</label>
+                <input type="text" id="nombre-iglesia" name="nombre-iglesia" placeholder="Ej: Iglesia Evangélica El Refugio" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email-iglesia">Correo electrónico *</label>
+                <input type="email" id="email-iglesia" name="email-iglesia" placeholder="pastor@iglesia.cl" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono-iglesia">Teléfono</label>
+                <input type="tel" id="telefono-iglesia" name="telefono-iglesia" placeholder="+56 9 XXXX XXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="direccion-iglesia">Dirección de la Iglesia</label>
+              <input type="text" id="direccion-iglesia" name="direccion-iglesia" placeholder="Calle, número, sector en El Bosque" />
+            </div>
+            <div class="form-group">
+              <label for="denominacion">Denominación / Tradición</label>
+              <input type="text" id="denominacion" name="denominacion" placeholder="Ej: Pentecostal, Bautista, Evangélica, etc." />
+            </div>
+            <div class="form-group">
+              <label for="mensaje-iglesia">¿Por qué quieres afiliarte?</label>
+              <textarea id="mensaje-iglesia" name="mensaje-iglesia" rows="4" placeholder="Cuéntanos sobre tu congregación y tus motivaciones para unirte al Consejo..."></textarea>
+            </div>
+          </div>
+
+          <!-- TAB: VOLUNTARIO -->
+          <div class="tab-content" id="tab-voluntario">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre-vol">Nombre completo *</label>
+                <input type="text" id="nombre-vol" name="nombre-vol" placeholder="Tu nombre y apellido" required />
+              </div>
+              <div class="form-group">
+                <label for="email-vol">Correo electrónico *</label>
+                <input type="email" id="email-vol" name="email-vol" placeholder="tucorreo@mail.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono-vol">Teléfono</label>
+                <input type="tel" id="telefono-vol" name="telefono-vol" placeholder="+56 9 XXXX XXXX" />
+              </div>
+              <div class="form-group">
+                <label for="iglesia-vol">Iglesia a la que asistes</label>
+                <input type="text" id="iglesia-vol" name="iglesia-vol" placeholder="Nombre de tu congregación" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Áreas de interés (selecciona una o más)</label>
+              <div class="checkboxes">
+                <label class="checkbox-item"><input type="checkbox" name="area" value="social"/> Acción Social</label>
+                <label class="checkbox-item"><input type="checkbox" name="area" value="ninos"/> Ministerio de Niños</label>
+                <label class="checkbox-item"><input type="checkbox" name="area" value="comunicaciones"/> Comunicaciones</label>
+                <label class="checkbox-item"><input type="checkbox" name="area" value="logistica"/> Logística de Eventos</label>
+                <label class="checkbox-item"><input type="checkbox" name="area" value="oracion"/> Intercesión</label>
+                <label class="checkbox-item"><input type="checkbox" name="area" value="musica"/> Música y Alabanza</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="disponibilidad">Disponibilidad</label>
+              <select id="disponibilidad" name="disponibilidad">
+                <option value="">Selecciona tu disponibilidad</option>
+                <option value="fin-semana">Fines de semana</option>
+                <option value="semana">Entre semana</option>
+                <option value="ambos">Ambos</option>
+                <option value="eventos">Solo en eventos específicos</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje-vol">Cuéntanos algo sobre ti</label>
+              <textarea id="mensaje-vol" name="mensaje-vol" rows="4" placeholder="Tus habilidades, experiencia, motivación..."></textarea>
+            </div>
+          </div>
+
+          <!-- TAB: GENERAL -->
+          <div class="tab-content" id="tab-general">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre-gen">Nombre *</label>
+                <input type="text" id="nombre-gen" name="nombre-gen" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="email-gen">Correo electrónico *</label>
+                <input type="email" id="email-gen" name="email-gen" placeholder="tucorreo@mail.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje-gen">Mensaje *</label>
+              <textarea id="mensaje-gen" name="mensaje-gen" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
+              Enviar mensaje
+            </button>
+            <p class="form-disclaimer">Al enviar este formulario aceptas que nos comuniquemos contigo al respecto.</p>
+          </div>
+
+          <div id="form-success" class="form-success" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Gracias por contactarnos. Te responderemos a la brevedad. ¡Dios te bendiga!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO DIRECTA -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Información directa</span>
+        <h2>También puedes <span class="purple">escribirnos</span></h2>
+      </div>
+      <div class="contacto-info-grid">
+        <div class="contacto-info-item">
+          <div class="ci-icon">📍</div>
+          <h4>Dirección</h4>
+          <p>El Bosque, Santiago<br/>Región Metropolitana, Chile</p>
+        </div>
+        <div class="contacto-info-item">
+          <div class="ci-icon">✉️</div>
+          <h4>Correo</h4>
+          <p>contacto@cpelbosque.cl</p>
+        </div>
+        <div class="contacto-info-item">
+          <div class="ci-icon">📱</div>
+          <h4>WhatsApp</h4>
+          <p>+56 9 XXXX XXXX</p>
+        </div>
+        <div class="contacto-info-item">
+          <div class="ci-icon">🌐</div>
+          <h4>Redes Sociales</h4>
+          <p>@cpelbosque<br/>Facebook · Instagram</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Logo" class="footer-logo"/>
+          <p>Uniendo el cuerpo de Cristo en la Comuna de El Bosque, Santiago de Chile.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="iglesias.html">Iglesias</a></li>
+            <li><a href="unete.html">Únete</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>📍 El Bosque, Santiago, Chile</p>
+          <p>✉️ contacto@cpelbosque.cl</p>
+          <p>📞 +56 9 XXXX XXXX</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">Facebook</a>
+            <a href="#" class="social-btn">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Consejo de Pastores El Bosque — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

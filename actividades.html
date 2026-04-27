@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Actividades | Consejo de Pastores El Bosque</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Consejo de Pastores El Bosque" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="actividades.html" class="active">Actividades</a></li>
+        <li><a href="iglesias.html">Iglesias</a></li>
+        <li><a href="unete.html" class="nav-cta">Únete</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="tag">Calendario</span>
+      <h1>Actividades</h1>
+      <p>Celebraciones, encuentros de liderazgo, acción social y mucho más.</p>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="filtros">
+        <button class="filtro-btn active" data-filter="all">Todas</button>
+        <button class="filtro-btn" data-filter="celebracion">Celebración</button>
+        <button class="filtro-btn" data-filter="formacion">Formación</button>
+        <button class="filtro-btn" data-filter="social">Acción Social</button>
+        <button class="filtro-btn" data-filter="oracion">Oración</button>
+      </div>
+
+      <div class="actividades-grid" id="actividades-grid">
+
+        <article class="act-card" data-cat="celebracion">
+          <div class="act-header celebracion">
+            <span class="act-tipo">Celebración</span>
+            <div class="act-fecha-badge">
+              <span class="dia">15</span>
+              <span class="mes">JUN</span>
+            </div>
+          </div>
+          <div class="act-body">
+            <h3>Culto de Unidad Pastoral</h3>
+            <p>Gran encuentro de adoración y proclamación de todas las iglesias del consejo. Un momento para celebrar juntos la fidelidad de Dios.</p>
+            <div class="act-meta">
+              <span>🕐 10:00 AM</span>
+              <span>📍 Plaza El Bosque</span>
+            </div>
+          </div>
+          <div class="act-footer">
+            <a href="unete.html" class="btn btn-sm btn-primary">Registrarse</a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="formacion">
+          <div class="act-header formacion">
+            <span class="act-tipo">Formación</span>
+            <div class="act-fecha-badge">
+              <span class="dia">22</span>
+              <span class="mes">JUN</span>
+            </div>
+          </div>
+          <div class="act-body">
+            <h3>Retiro de Líderes 2025</h3>
+            <p>Encuentro de capacitación, reflexión y comunión para pastores y líderes de las iglesias afiliadas. Incluye talleres y sesiones plenarias.</p>
+            <div class="act-meta">
+              <span>🕐 Todo el día</span>
+              <span>📍 Centro de Retiro (TBD)</span>
+            </div>
+          </div>
+          <div class="act-footer">
+            <a href="unete.html" class="btn btn-sm btn-primary">Registrarse</a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="social">
+          <div class="act-header social">
+            <span class="act-tipo">Acción Social</span>
+            <div class="act-fecha-badge">
+              <span class="dia">05</span>
+              <span class="mes">JUL</span>
+            </div>
+          </div>
+          <div class="act-body">
+            <h3>Operativo Comunitario</h3>
+            <p>Entrega de alimentos, ropa, atención médica básica y consejería a vecinos en situación de vulnerabilidad de la comuna.</p>
+            <div class="act-meta">
+              <span>🕐 9:00 AM</span>
+              <span>📍 Sector El Pinar</span>
+            </div>
+          </div>
+          <div class="act-footer">
+            <a href="unete.html" class="btn btn-sm btn-primary">Voluntariado</a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="oracion">
+          <div class="act-header oracion">
+            <span class="act-tipo">Oración</span>
+            <div class="act-fecha-badge">
+              <span class="dia">12</span>
+              <span class="mes">JUL</span>
+            </div>
+          </div>
+          <div class="act-body">
+            <h3>Noche de Oración por El Bosque</h3>
+            <p>Vigilia de intercesión por las familias, autoridades y necesidades de nuestra comuna. Abierta a todos los creyentes.</p>
+            <div class="act-meta">
+              <span>🕐 9:00 PM</span>
+              <span>📍 Iglesia El Refugio</span>
+            </div>
+          </div>
+          <div class="act-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Asistir</a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="formacion">
+          <div class="act-header formacion">
+            <span class="act-tipo">Formación</span>
+            <div class="act-fecha-badge">
+              <span class="dia">19</span>
+              <span class="mes">JUL</span>
+            </div>
+          </div>
+          <div class="act-body">
+            <h3>Seminario: Liderazgo Cristiano Hoy</h3>
+            <p>Taller para líderes jóvenes y emergentes sobre desafíos del ministerio en el contexto actual chileno.</p>
+            <div class="act-meta">
+              <span>🕐 2:00 PM</span>
+              <span>📍 Centro Cristiano Nueva Esperanza</span>
+            </div>
+          </div>
+          <div class="act-footer">
+            <a href="unete.html" class="btn btn-sm btn-primary">Inscribirse</a>
+          </div>
+        </article>
+
+        <article class="act-card" data-cat="celebracion">
+          <div class="act-header celebracion">
+            <span class="act-tipo">Celebración</span>
+            <div class="act-fecha-badge">
+              <span class="dia">03</span>
+              <span class="mes">AGO</span>
+            </div>
+          </div>
+          <div class="act-body">
+            <h3>Fiesta de la Comunidad Evangélica</h3>
+            <p>Gran evento familiar al aire libre con música, juegos y testimonio. Abierto a toda la comunidad de El Bosque.</p>
+            <div class="act-meta">
+              <span>🕐 11:00 AM</span>
+              <span>📍 Parque El Bosque</span>
+            </div>
+          </div>
+          <div class="act-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Participar</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAS PERMANENTES -->
+  <section class="section-pad dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Todo el año</span>
+        <h2>Programas <span class="green">Permanentes</span></h2>
+      </div>
+      <div class="programas-grid">
+        <div class="programa-item">
+          <div class="programa-icon">🙏</div>
+          <h3>Oración Intercesora</h3>
+          <p>Cada primer martes del mes, pastores de todas las iglesias se reúnen a orar por la comuna.</p>
+        </div>
+        <div class="programa-item">
+          <div class="programa-icon">📦</div>
+          <h3>Banco de Alimentos</h3>
+          <p>Red de apoyo alimentario mensual para familias vulnerables identificadas por las iglesias.</p>
+        </div>
+        <div class="programa-item">
+          <div class="programa-icon">👶</div>
+          <h3>Ministerio de Niños</h3>
+          <p>Programas educativos y recreativos para niños de la comunidad los sábados por la mañana.</p>
+        </div>
+        <div class="programa-item">
+          <div class="programa-icon">📚</div>
+          <h3>Capacitación Pastoral</h3>
+          <p>Encuentros bimestrales de formación teológica y desarrollo de habilidades de liderazgo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <h2>¿Quieres participar o apoyar?</h2>
+      <p>Hay un lugar para ti en el Consejo de Pastores El Bosque.</p>
+      <a href="unete.html" class="btn btn-white">Contáctanos</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Logo" class="footer-logo"/>
+          <p>Uniendo el cuerpo de Cristo en la Comuna de El Bosque, Santiago de Chile.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="iglesias.html">Iglesias</a></li>
+            <li><a href="unete.html">Únete</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>📍 El Bosque, Santiago, Chile</p>
+          <p>✉️ contacto@cpelbosque.cl</p>
+          <p>📞 +56 9 XXXX XXXX</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">Facebook</a>
+            <a href="#" class="social-btn">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Consejo de Pastores El Bosque — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

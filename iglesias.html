@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iglesias | Consejo de Pastores El Bosque</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Consejo de Pastores El Bosque" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="iglesias.html" class="active">Iglesias</a></li>
+        <li><a href="unete.html" class="nav-cta">Únete</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="tag">Comunidad</span>
+      <h1>Iglesias</h1>
+      <p>Conoce las congregaciones que conforman el Consejo de Pastores El Bosque.</p>
+    </div>
+  </section>
+
+  <!-- BÚSQUEDA -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="busqueda-bar">
+        <input type="text" id="buscar-iglesia" placeholder="🔍  Buscar iglesia por nombre o sector..." class="search-input"/>
+      </div>
+
+      <div class="iglesias-grid" id="iglesias-grid">
+
+        <div class="iglesia-card" data-nombre="iglesia evangelica el refugio">
+          <div class="iglesia-card-header" style="background: var(--purple)">
+            <span class="iglesia-inicial">ER</span>
+          </div>
+          <div class="iglesia-card-body">
+            <h3>Iglesia Evangélica El Refugio</h3>
+            <span class="iglesia-denominacion">Evangélica Independiente</span>
+            <div class="iglesia-info">
+              <p>📍 Av. El Bosque 1234, El Bosque</p>
+              <p>👤 Pastor: Juan Pérez</p>
+              <p>🕐 Dom 10:00 AM · Mié 7:30 PM</p>
+            </div>
+          </div>
+          <div class="iglesia-card-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Contactar</a>
+          </div>
+        </div>
+
+        <div class="iglesia-card" data-nombre="comunidad cristiana luz y vida">
+          <div class="iglesia-card-header" style="background: var(--green)">
+            <span class="iglesia-inicial">LV</span>
+          </div>
+          <div class="iglesia-card-body">
+            <h3>Comunidad Cristiana Luz y Vida</h3>
+            <span class="iglesia-denominacion">Pentecostal</span>
+            <div class="iglesia-info">
+              <p>📍 Calle Los Aromos 456, El Bosque</p>
+              <p>👤 Pastora: María González</p>
+              <p>🕐 Dom 11:00 AM · Vie 8:00 PM</p>
+            </div>
+          </div>
+          <div class="iglesia-card-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Contactar</a>
+          </div>
+        </div>
+
+        <div class="iglesia-card" data-nombre="iglesia pentecostal el shaddai">
+          <div class="iglesia-card-header" style="background: var(--purple)">
+            <span class="iglesia-inicial">ES</span>
+          </div>
+          <div class="iglesia-card-body">
+            <h3>Iglesia Pentecostal El Shaddai</h3>
+            <span class="iglesia-denominacion">Pentecostal Clásica</span>
+            <div class="iglesia-info">
+              <p>📍 Pasaje Las Rosas 78, El Bosque</p>
+              <p>👤 Pastor: Roberto Díaz</p>
+              <p>🕐 Dom 9:30 AM · Jue 7:00 PM</p>
+            </div>
+          </div>
+          <div class="iglesia-card-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Contactar</a>
+          </div>
+        </div>
+
+        <div class="iglesia-card" data-nombre="centro cristiano nueva esperanza">
+          <div class="iglesia-card-header" style="background: var(--green)">
+            <span class="iglesia-inicial">NE</span>
+          </div>
+          <div class="iglesia-card-body">
+            <h3>Centro Cristiano Nueva Esperanza</h3>
+            <span class="iglesia-denominacion">Carismática</span>
+            <div class="iglesia-info">
+              <p>📍 Av. Central 890, El Bosque</p>
+              <p>👤 Pastor: Carlos Mora</p>
+              <p>🕐 Dom 10:30 AM · Mar 7:30 PM</p>
+            </div>
+          </div>
+          <div class="iglesia-card-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Contactar</a>
+          </div>
+        </div>
+
+        <div class="iglesia-card" data-nombre="iglesia bautista el bosque">
+          <div class="iglesia-card-header" style="background: var(--purple)">
+            <span class="iglesia-inicial">IB</span>
+          </div>
+          <div class="iglesia-card-body">
+            <h3>Iglesia Bautista El Bosque</h3>
+            <span class="iglesia-denominacion">Bautista</span>
+            <div class="iglesia-info">
+              <p>📍 Calle Los Pinos 321, El Bosque</p>
+              <p>👤 Pastor: Andrés Silva</p>
+              <p>🕐 Dom 11:00 AM · Mié 7:00 PM</p>
+            </div>
+          </div>
+          <div class="iglesia-card-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Contactar</a>
+          </div>
+        </div>
+
+        <div class="iglesia-card" data-nombre="mision cristiana agape">
+          <div class="iglesia-card-header" style="background: var(--green)">
+            <span class="iglesia-inicial">AG</span>
+          </div>
+          <div class="iglesia-card-body">
+            <h3>Misión Cristiana Ágape</h3>
+            <span class="iglesia-denominacion">Evangélica</span>
+            <div class="iglesia-info">
+              <p>📍 Villa El Bosque, El Bosque</p>
+              <p>👤 Pastor: Luis Fernández</p>
+              <p>🕐 Dom 10:00 AM · Vie 7:00 PM</p>
+            </div>
+          </div>
+          <div class="iglesia-card-footer">
+            <a href="unete.html" class="btn btn-sm btn-outline">Contactar</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="no-resultados" class="no-resultados" style="display:none;">
+        <p>No se encontraron iglesias con ese nombre.</p>
+      </div>
+
+      <div class="center-btn" style="margin-top: 2rem;">
+        <p class="footnote-text">¿Tu iglesia no aparece? <a href="unete.html" class="link-inline">Solicita tu registro aquí.</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA PLACEHOLDER -->
+  <section class="section-pad dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Ubicación</span>
+        <h2>Encuentra una iglesia <span class="green">cerca de ti</span></h2>
+        <p>Todas nuestras iglesias están en la Comuna de El Bosque, Santiago.</p>
+      </div>
+      <div class="mapa-placeholder">
+        <div class="mapa-overlay-text">
+          <p>🗺️ Mapa interactivo</p>
+          <p class="small">Integración con Google Maps disponible</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <h2>¿Tu iglesia quiere aparecer aquí?</h2>
+      <p>Únete al Consejo de Pastores y hazte visible para toda la comunidad.</p>
+      <a href="unete.html" class="btn btn-white">Registrar mi iglesia</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Logo" class="footer-logo"/>
+          <p>Uniendo el cuerpo de Cristo en la Comuna de El Bosque, Santiago de Chile.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="iglesias.html">Iglesias</a></li>
+            <li><a href="unete.html">Únete</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>📍 El Bosque, Santiago, Chile</p>
+          <p>✉️ contacto@cpelbosque.cl</p>
+          <p>📞 +56 9 XXXX XXXX</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">Facebook</a>
+            <a href="#" class="social-btn">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Consejo de Pastores El Bosque — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
